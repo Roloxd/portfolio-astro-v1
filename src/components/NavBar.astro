@@ -1,0 +1,77 @@
+---
+import "../styles/components/navbar.scss"
+const logoName = "<ja>"
+
+---
+  <nav class="nav" id="nav_back">
+    <!-- <a href="#home" class="logo">{logoName}</a> -->
+    <ul class="nav__links">
+      <li ><a href="#about" class="nav__links-link">Sobre mí</a></li>
+      <li ><a href="#experiencia" class="nav__links-link">Experiencia</a></li>
+      <li ><a href="#proyectos" class="nav__links-link">Proyectos</a></li>
+      <li ><a href="#contacto" class="nav__links-link">Contacto</a></li>
+    </ul>
+    <button class="menu" onclick="this.classList.toggle('opened')" aria-label="Main Menu">
+      <svg width="100" height="100" viewBox="0 0 100 100">
+        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+        <path class="line line2" d="M 20,50 H 80" />
+        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+      </svg>
+    </button>
+
+    <aside class="side__wrapper side__bar close">
+      <nav class="side__nav">
+        <ul>
+          <li ><a href="#about" class="nav__links-link">Sobre mí</a></li>
+          <li ><a href="#experiencia" class="nav__links-link">Experiencia</a></li>
+          <li ><a href="#proyectos" class="nav__links-link">Proyectos</a></li>
+          <li ><a href="#contacto" class="nav__links-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <script>
+      const links = document.querySelectorAll(".nav__links-link");
+      const menu = document.getElementsByClassName("menu")[0];
+      const sidewrapper = document.getElementsByClassName("side__wrapper")[0];
+
+      menu.addEventListener("click",openSide);
+
+      for (const link of links) {
+        link.addEventListener("click", clickHandler);
+      }
+
+    function clickHandler(e) {
+      e.preventDefault();
+      const href = this.getAttribute("href");
+      const offsetTop = document.querySelector(href).offsetTop;
+
+      console.log(offsetTop);
+      scroll({
+        top: offsetTop - 100,
+        behavior: "smooth"
+      });
+      menu.classList.remove("opened");
+      sidewrapper.classList.remove("open");
+      sidewrapper.classList.add("close");
+      document.body.style.overflowY = 'visible';
+    }
+    function openSide(){
+
+      if(sidewrapper.classList.contains("open")){
+        sidewrapper.classList.remove("open");
+        sidewrapper.classList.add("close");
+        document.body.style.overflowY = 'visible';
+
+      } else{
+
+        if(sidewrapper.classList.contains("close")){
+          sidewrapper.classList.remove("close");
+          sidewrapper.classList.add("open");
+          document.body.style.overflowY = 'hidden';
+
+        }
+      }
+    }
+    </script>
+  </nav>

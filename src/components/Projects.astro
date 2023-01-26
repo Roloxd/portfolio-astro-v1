@@ -1,0 +1,40 @@
+---
+import "../styles/components/projects.scss";
+import { Icon } from "astro-icon";
+
+---
+
+<section id="proyectos" class="section_">
+    <div class="projects__container">
+        <div class="projects__title">
+            <h2>Proyectos</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="project__card">
+            <div class="project__img overlap">
+                <img  src="../../images/coding.jpg" alt="Imagen del Proyecto Uno">
+            </div>
+            <div class="project__info">
+                <h3>Proyecto Uno</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad veritatis nulla atque quae minus fugiat est explicabo, praesentium iusto officiis hic impedit asperiores ratione similique ullam, molestias perspiciatis enim? Unde.</p>
+                <div class="project__technologies">
+                    <ul>
+                        <li>React</li>
+                        <li>MongoDB</li>
+                        <li>TypeScript</li>
+                        <li>Nextjs</li>
+                    </ul>
+                </div>
+                <div class="project__links">
+                   <a href="#">
+                       <Icon name="mdi:external-link" class="project__link"/>
+                    </a> 
+                    <a href="#">
+                        <Icon name="mdi:github" class="project__link"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
