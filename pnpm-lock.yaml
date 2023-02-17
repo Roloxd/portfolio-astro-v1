@@ -2,10 +2,6 @@ lockfileVersion: 5.4
 
 specifiers:
   '@astrojs/react': ^1.2.2
-  '@fontsource/comforter-brush': ^4.5.8
-  '@fontsource/fira-sans': ^4.5.10
-  '@fontsource/space-mono': ^4.5.12
-  '@fontsource/twinkle-star': ^4.5.9
   '@types/react': ^18.0.21
   '@types/react-dom': ^18.0.6
   astro: ^1.9.0
@@ -16,10 +12,6 @@ specifiers:
 
 dependencies:
   '@astrojs/react': 1.2.2_fxtgt6bjwd6p4cwoordejim2zi
-  '@fontsource/comforter-brush': 4.5.8
-  '@fontsource/fira-sans': 4.5.10
-  '@fontsource/space-mono': 4.5.12
-  '@fontsource/twinkle-star': 4.5.9
   '@types/react': 18.0.27
   '@types/react-dom': 18.0.10
   astro: 1.9.2_sass@1.57.1
@@ -419,22 +411,6 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
-
-  /@fontsource/comforter-brush/4.5.8:
-    resolution: {integrity: sha512-0UBmJZIDiFDFwpi1z0V+OCMmiBYDacUqOwqOFndKUVR6pBz1WvxWh9ezC4448YVmGWmKtu8wjR08lYdfNJ0agQ==}
-    dev: false
-
-  /@fontsource/fira-sans/4.5.10:
-    resolution: {integrity: sha512-4Edj+GA0LYSqfXOvdTwVGmCShT8Ycd8bKzdfzM302n+I6Hsg6h3gBkBeNgN19PhkcngDznZyHv3EkyrKqvMTGw==}
-    dev: false
-
-  /@fontsource/space-mono/4.5.12:
-    resolution: {integrity: sha512-/ljrJgSIB/C0jUCn07r/V/KpkdHF9bnK2fD0raGSVkgQjFqQ6Q3LndVeBiUCJlIi6ROh7rHDkpFzn+nNmRgRlQ==}
-    dev: false
-
-  /@fontsource/twinkle-star/4.5.9:
-    resolution: {integrity: sha512-41Z1cV7Dp505+/ceDMMSRRbeaSdkXYJyKGJzkUAu0lJWkUZHShuxzjHPa1Pq8hEndvBoBtAtq6MVgaryZ2DTgA==}
-    dev: false
 
   /@jridgewell/gen-mapping/0.1.1:
     resolution: {integrity: sha512-sQXCasFk+U8lWYEe66WxRDOE9PjVz4vSM51fTu3Hw+ClTpUSQb718772vH3pyS5pShp6lvQM7SxgIDXXXmOX7w==}
