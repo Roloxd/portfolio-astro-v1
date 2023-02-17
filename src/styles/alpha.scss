@@ -1,9 +1,9 @@
-@import "components/about";
+@import "main";
+@import "layouts/layout";
+@import "components/navbar";
+@import "components/hero";
 @import "components/button";
+@import "components/about";
 @import "components/contact";
 @import "components/experience";
-@import "components/hero";
-@import "components/navbar";
 @import "components/projects";
-@import "layouts/layout";
-@import "main";
