@@ -52,13 +52,6 @@
   grid-template-columns: repeat(3, minmax(140px, 200px));
 }
 
-@media (max-width: 855px) {
-  .about__text {
-    p {
-      font-size: 18px;
-    }
-  }
-}
 @media (max-width: 500px) {
   .about__text {
     width: 90%;
