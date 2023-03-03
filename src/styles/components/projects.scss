@@ -72,6 +72,9 @@
   }
 }
 @media (max-width: 500px) {
+  .project__card {
+    width: 95%;
+  }
   .project__info {
     h3 {
       font-size: 22px;
