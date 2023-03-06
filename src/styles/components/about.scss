@@ -1,5 +1,9 @@
 @import "../main.scss";
 
+#about {
+  min-height: 80vh;
+}
+
 .about__container {
   display: flex;
   flex-direction: column;
